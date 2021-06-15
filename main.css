@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pattaya&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+i{
+  pointer-events: none;
+}
+.navbar {
+  padding-left: 40px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ededed;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  /* font-weight: 300; */
+}
+
+.logo {
+  font-family: 'Pattaya';font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+
+  
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.navbar-links a:hover {
+  color: rgb(189, 189, 189);
+  transition: 0.3s;
+}
+
+.list-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.list-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+ 
+
+  
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+
+  .list-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    transition: all 1s ease-out;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  
+
+}
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 300;
+}
+.header:hover {
+  color: rgb(189, 189, 189);
+  transition: 0.5s;
+}
+.shop-container {
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.item-quantity input {
+  width: 60px;
+}
+.item-quantity label {
+  font-size: 15px;
+}
+.addToBasketButton {
+  padding: 10px 24px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: none;
+
+}
+
+Button:hover{
+  opacity: 0.5;
+  
+}
+.item-name {
+  padding: 10px;
+}
+.item-image {
+  padding: 10px;
+}
+.item-image img {
+  width: 630px;
+  height: 630px;
+  width: 60%;
+  height: 60%;
+}
+.add-to-basket {
+  padding: 10px;
+}
+
+
+@media (min-width: 800px) {
+  
+  .shop-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.invoice {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  align-self: center;
+  margin: 5% 30% 5% 30%;
+  padding: 20px 40px 20px 40px;
+  border: black solid;
+  border-width: medium;
+  border-style: dashed;
+  /* min-width: 150px; */
+}
+
+@media (max-width: 800px) {
+  .invoice {
+    margin: 5%;
+  }}
+
+
+.invoice-row {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: black solid;
+  border-width: thin;
+  max-width: 100%;
+}
+.item-name-header {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.item-price-header {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.item-quantity-header {
+  width: 35%;
+
+  align-items: center;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.invoice-total {
+  display: block;
+  float: right;
+  padding: 15px;
+  margin: 10px;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.order-item-name {
+  padding: 10px;
+}
+
+.order-item-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+.order-item-price {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.rmv {
+padding: 10px;
+  border-radius: 10px;
+  border-width: thin;
+  background-color: #c34437;
+  color: white;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.add,
+.Del {
+  color: white;
+  border-width: thin;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.cart-item-column,
+.cart-price-column,
+.cart-quantity-colmun {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.cart-item-column {
+  width: 40%;
+  display: flex;
+}
+.cart-price-column {
+  width: 25%;
+  display: flex;
+}
+
+.cart-quantity-column {
+  width: 35%;
+  display: flex;
+  padding-top: 10px;
+}
+
+.cart-quantity-input {
+  height: 30px;
+  width: 40px;
+  border-radius: 8px;
+  border-width: thin;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.purchase {
+  text-align: center;
+  border-radius: 10px;
+
+  margin: 5% 30% 5% 30%;
+  padding: 20px 40px 20px 30px;
+  border: black solid;
+  border-width: medium;
+  border-style: dashed;
+  width: auto;
+  height: auto;
+}
+
+.purchase-button {
+  border: none;
+  padding: 2% ;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.purchase-button:hover {
+  background-color: lightblue;
+}
+.personal-form {
+  text-align: center;
+  float: center;
+}
+.personal-details-form {
+  text-align: center;
+  margin: 10px;
+}
+.personal-details-form input {
+  border-radius: 8px;
+  border-width: thin;
+  float: left;
+  padding: 12px;
+  width: 100%;
+  display: block;
+}
+input:focus {
+  transition: ease-in-out, width 0.35s ease-in-out;
+}
+
+.personal-details-form label {
+  width: 180px;
+  font-size: 18px;
+}
+
+#firstname,
+#lastname,
+#email {
+  margin: 10px;
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.personal-form h2 {
+  font-size: 20px;
+  padding: 10px;
+}
+.order-row {
+  width: auto;
+  text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+
+.order-item button {
+  height: 30px;
+}
+
+
+.final-invoice-row {
+  display: flex;
+}
+
+.final-invoice-total {
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.thank-you-row {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: black solid;
+  border-width: thin;
+  width: 100%;
+}

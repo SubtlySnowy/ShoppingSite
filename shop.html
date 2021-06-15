@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="hover.css">
+    <script src="script.js" async></script>
+    <link rel="icon" href="imgs/92009.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Birds</title>
+</head>
+<body>
+    <div class="navbar">
+        <!-- <img src="/imgs/logo5.png" alt="logo" width="" height="30"> -->
+        <div class="logo">The Birds</div>
+        <a href="#" class="list-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-links">
+            <!-- <img class="logo" src="/imgs/logo3.png" alt=""> -->
+            <ul>
+                <li class="nav"><a href="">Main Page</a></li>
+                <li class="nav"><a href="">Shop</a></li>
+                <li class="nav"><a href="">Quiz</a></li>
+                <li class="nav"><a href="">Query</a></li>
+                <li class="nav"><a href="">Diagram</a></li>
+            </ul>   
+        </nav>
+        
+
+    </div>
+    <div class="header">
+Welcome to the band shop!
+    </div>
+
+    <section class="shop-container">
+
+        <section class="item">
+            <div class="item-name">
+                Band Cap
+            </div>
+            <div class="item-image hvr-grow">
+                <img src="/imgs/cap.jpg" alt="tshirt">
+            </div>
+            <div class="item-price">
+                14.99£
+            </div>
+
+            <div class="add-to-basket">
+                <button class="addToBasketButton" type="button">ADD TO BASKET</button>
+
+            </div>
+        </section>
+        <section class="item">
+            <div class="item-name">
+                Band Hoodie
+            </div>
+            <div class="item-image hvr-grow">
+                <img src="/imgs/hoodie1.jpg" width="630" height="630" alt="tshirt">
+            </div>
+            <div class="item-price">
+                39.99£
+            </div>
+
+           
+            <div class="add-to-basket">
+                <button class="addToBasketButton" type="button">ADD TO BASKET</button>
+
+
+            </div>
+        </section>
+        <section class="item">
+            <div class="item-name">
+                Autumn Album
+            </div>
+            <div class="item-image hvr-grow">
+                <img src="/imgs/albumcover.jpg" alt="tshirt">
+            </div>
+            <div class="item-price">
+                12.99£
+
+            </div>
+
+           
+            <div class="add-to-basket">
+                <button class="addToBasketButton" type="button">ADD TO BASKET</button>
+
+
+            </div>
+        </section>
+
+    </section>
+
+   <section class="invoice">
+       <h1>Shopping cart</h1>
+       <div class="invoice-row">
+        <span class="item-name-header">ITEM</span>
+        <span class="item-price-header">PRICE</span>
+        <span class="item-quantity-header">QUANTITY</span>
+    </div>
+    <div class="invoice-items">
+    </div>
+    <div class="invoice-total">
+        <div class="invoice-total-title">Total</div>
+        <div class="invoice-total-price">£0</div>
+    </div>
+
+        <div class="personal-form">
+            <h2>Please enter your personal details</h2>
+            <form class="personal-details-form" id="personal-details-form">
+                <label for="name"  >Your first name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your first name"><br>
+                <label for="name" >Your last name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your last name"><br>
+                <label for="email" >E-mail:</label> 
+                <input type="email" name="email" id="email" placeholder="Your Email Address">
+
+            </form>
+            <button type="click" class="purchase-button">Purchase</button>
+
+        </div>
+
+        <h1>Your invoice will appear here</h1>
+        <div class="personal-details">
+
+        </div>
+        <div class="invoice-row">
+            <span class="item-name-header">ITEM</span>
+            <span class="item-price-header">PRICE</span>
+            <span class="item-quantity-header">QUANTITY</span>
+        </div>
+        <div class="final-invoice">
+  
+        </div>
+        <div class="final-total">
+        </div>
+
+    </section>
+
+
+</body>
+</html>
